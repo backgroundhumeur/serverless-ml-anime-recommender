@@ -5,7 +5,7 @@ with the object of making daily predictions on a regularly updated data source.
 
 The subject chosen is a recommender for [Anime](https://en.wikipedia.org/wiki/Anime), a term used to describe japanese animation,
 using the openly available database with a [GraphQL API](https://anilist.co/graphiql?query=) from the anime aggregation website
-<Anilist.co>.
+[Anilist.co](https://anilist.co/).
 
 This project was chosen because no other recommender of the sort, using
 Tensorflow's recommender models, exists right now, and there are no known
@@ -92,7 +92,7 @@ performances of the model with the constant influx of new features.
 ## The daily prediction service
 
 For now, the daily prediction service consists of estimating ratings collected
-daily using the activity feature of <Anilist.co> that displays what users have
+daily using the activity feature of [Anilist.co](https://anilist.co/) that displays what users have
 completed and scored on a day-to-day basis. We are limiting our activity scraping to the 23k users that we selected earlier as they are all currently active users(i.e. updated their list in the last two weeks).
 
 We use batch inference to perform the prediction and then compare it to what the
