@@ -1,5 +1,4 @@
 # serverless-ml-anime-recommender
-Project for the course ID2223.
 
 This project consists of implementing a serverless Machine Learning pipeline
 with the object of making daily predictions on a regularly updated data source.
@@ -47,12 +46,16 @@ a candidate tower the anime's title and its other features.
 The retrieval part permits us to get a pool of suitable candidate to recommend
 from.
 
+![Retrieval model UML](https://raw.githubusercontent.com/backgroundhumeur/serverless-ml-anime-recommender/main/imgs/user_anime_retrieval.png)
+
 Then comes the ranking part with a Ranking model, that handles the tast of
 predicting from a user list and a given title and their other features, the
 score given to that title.
 
 The ranking model will rank all the titles that we retrieved earlier and we can
 display the top results for out recommendation.
+
+![Ranking model UML](https://raw.githubusercontent.com/backgroundhumeur/serverless-ml-anime-recommender/main/imgs/user_anime_ranking.png)
 
 Both model are multi-layered deep neural networks with a feed forward
 architecture but since there wasn't an extensive hyperparameter search, their
